@@ -1,11 +1,11 @@
-import React, { useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 // Function to shuffle an array
 const shuffleArray = (array) => {
-  let shuffledArray = array.slice(); // Create a copy of the array
+  let shuffledArray = [...array]; // Create a copy of the array
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
@@ -14,18 +14,28 @@ const shuffleArray = (array) => {
 };
 
 const Tech = () => {
-  const isMobile = window.matchMedia("(max-width: 500px)").matches;
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Shuffle technologies ONCE and store in memory
+  // Effect to detect screen width
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleResize = () => setIsMobile(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+  // Shuffle technologies only once using useMemo
   const shuffledTechnologies = useMemo(() => shuffleArray(technologies), []);
 
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {shuffledTechnologies.map((technology, index) => (
+      {shuffledTechnologies.slice(0, isMobile ? 5 : shuffledTechnologies.length).map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
-          {index < 20 ? (
-            <BallCanvasMemoized icon={technology.icon} />
-          ) : (
+          <BallCanvas icon={technology.icon} />
+          {isMobile && (
             <p className="flex justify-center text-white font-bold">
               {technology.name}
             </p>
@@ -35,8 +45,5 @@ const Tech = () => {
     </div>
   );
 };
-
-// ✅ Memoized version of BallCanvas to avoid unnecessary re-renders
-const BallCanvasMemoized = React.memo(BallCanvas);
 
 export default SectionWrapper(Tech, "");
