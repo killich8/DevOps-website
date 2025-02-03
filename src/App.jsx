@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from '@vercel/analytics/react';
+import {Analytics} from '@vercel/analytics/react';
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, Blogs, StarsCanvas,Education } from "./components";
 
 const App = () => {
