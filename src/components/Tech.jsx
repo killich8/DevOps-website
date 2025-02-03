@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -16,33 +16,21 @@ const shuffleArray = (array) => {
 const Tech = () => {
   const isMobile = window.matchMedia("(max-width: 500px)").matches;
 
-  // Shuffle technologies array
-  const shuffledTechnologies = shuffleArray(technologies);
-
-  const Map = (isMobile, technologies) => {
-    if (isMobile) {
-      return technologies.slice(0, 5).map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ));
-    } else {
-      return technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ));
-    }
-  };
+  // Shuffle technologies ONCE and store in memory
+  const shuffledTechnologies = useMemo(() => shuffleArray(technologies), []);
 
   return (
-    <>
-
-      <div className="flex flex-row flex-wrap justify-center gap-10">
-        {Map(isMobile, shuffledTechnologies)}
-      </div>
-    </>
+    <div className="flex flex-row flex-wrap justify-center gap-10">
+      {shuffledTechnologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvasMemoized icon={technology.icon} />
+        </div>
+      ))}
+    </div>
   );
 };
+
+// ✅ Memoized version of BallCanvas to avoid unnecessary re-renders
+const BallCanvasMemoized = React.memo(BallCanvas);
 
 export default SectionWrapper(Tech, "");
