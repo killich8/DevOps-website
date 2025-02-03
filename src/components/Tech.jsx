@@ -21,15 +21,9 @@ const Tech = () => {
 
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {shuffledTechnologies.map((technology, index) => (
+      {shuffledTechnologies.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
-          {index < 20 ? (
-            <BallCanvasMemoized icon={technology.icon} />
-          ) : (
-            <p className="flex justify-center text-white font-bold">
-              {technology.name}
-            </p>
-          )}
+          <BallCanvasMemoized icon={technology.icon} />
         </div>
       ))}
     </div>
