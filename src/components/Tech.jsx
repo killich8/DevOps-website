@@ -24,9 +24,6 @@ const Tech = () => {
       return technologies.slice(0, 5).map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <BallCanvas icon={technology.icon} />
-          <p className="flex justify-center text-white font-bold">
-            {technology.name}
-          </p>
         </div>
       ));
     } else {
