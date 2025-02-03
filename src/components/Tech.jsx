@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from "react";
+import React from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -13,32 +13,38 @@ const shuffleArray = (array) => {
   return shuffledArray;
 };
 
-// Memoized BallCanvas to prevent unnecessary re-renders
-const MemoizedBallCanvas = memo(BallCanvas);
-
 const Tech = () => {
   const isMobile = window.matchMedia("(max-width: 500px)").matches;
 
-  // Shuffle technologies once and limit the number of rendered items
-  const shuffledTechnologies = useMemo(() => shuffleArray(technologies), []);
-  const limitedTechnologies = useMemo(
-    () => (isMobile ? shuffledTechnologies.slice(0, 5) : shuffledTechnologies.slice(0, 10)),
-    [isMobile, shuffledTechnologies]
-  );
+  // Shuffle technologies array
+  const shuffledTechnologies = shuffleArray(technologies);
+
+  const Map = (isMobile, technologies) => {
+    if (isMobile) {
+      return technologies.slice(0, 5).map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+          <p className="flex justify-center text-white font-bold">
+            {technology.name}
+          </p>
+        </div>
+      ));
+    } else {
+      return technologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+        </div>
+      ));
+    }
+  };
 
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {limitedTechnologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <MemoizedBallCanvas icon={technology.icon} />
-          {isMobile && (
-            <p className="flex justify-center text-white font-bold">
-              {technology.name}
-            </p>
-          )}
-        </div>
-      ))}
-    </div>
+    <>
+
+      <div className="flex flex-row flex-wrap justify-center gap-10">
+        {Map(isMobile, shuffledTechnologies)}
+      </div>
+    </>
   );
 };
 
