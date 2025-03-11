@@ -19,7 +19,8 @@ import {
   kubernetes,
   bash,
   grafana,
-  prometheus
+  prometheus,
+  circet
 } from "../assets";
 
 export const navLinks = [
@@ -102,6 +103,21 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "AI DevOps Architect",
+    company_name: "Circet - Orange, France",
+    icon: circet,
+    iconBg: "#FFFFFF",
+    date: "Present",
+    points: [
+      "Design and develop artificial intelligence models to solve business problems (predictions, anomaly analysis, automations).",
+      "Set up CI/CD pipelines for continuous integration and deployment of AI models in production (using Jenkins, Gitlab CI/CD ...).",
+      "Design and manage containerized architectures with Docker and Kubernetes.",
+      "Mannage cloud infrastructures to ensure scalability and resilience of applications.",
+      "Ensure the quality and maintenance of models in production (monitoring, retraining ...).",
+      "Write technical documentation and guides to support the use of implemented solutions.",
+    ],
+  },
   {
     title: "DevOps/MLOps Engineer",
     company_name: "BMW Group, Munich-Germany",

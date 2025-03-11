@@ -28,6 +28,7 @@ import gcp from "./tech/gcp.png";
 
 import capgemini from "./company/capgemini.png";
 import BMW from "./company/BMW.png";
+import circet from "./company/circet.png";
 
 
 import bordeaux from "./education/bordeaux.png";
@@ -69,5 +70,6 @@ export {
   kubernetes,
   bash,
   grafana,
-  prometheus
+  prometheus,
+  circet
 };

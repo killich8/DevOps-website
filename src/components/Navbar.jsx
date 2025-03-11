@@ -45,7 +45,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-32 h-32 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Youness Killich &nbsp;
-            <span className='sm:block hidden'> | DevOps Engineer</span>
+            <span className='sm:block hidden'> | AI DevOps Engineer</span>
           </p>
         </Link>
 
