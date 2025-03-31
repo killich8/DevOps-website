@@ -1,3 +1,4 @@
+import { comment } from "postcss";
 import {
   javascript,
   git,
@@ -104,20 +105,21 @@ const technologies = [
 
 const experiences = [
   {
-    title: "AI DevOps Architect",
+    title: "AI DevOps Engineer",
     company_name: "Circet - Orange, France",
     icon: circet,
     iconBg: "#FFFFFF",
-    date: "Present",
+    date: "2024 - Present",
     points: [
       "Design and develop artificial intelligence models to solve business problems (predictions, anomaly analysis, automations).",
       "Set up CI/CD pipelines for continuous integration and deployment of AI models in production (using Jenkins, Gitlab CI/CD ...).",
       "Design and manage containerized architectures with Docker and Kubernetes.",
       "Mannage cloud infrastructures to ensure scalability and resilience of applications.",
       "Ensure the quality and maintenance of models in production (monitoring, retraining ...).",
-      "Write technical documentation and guides to support the use of implemented solutions.",
+      "Write technical documentation and user guides for implemented solutions.",
     ],
   },
+  /*
   {
     title: "DevOps/MLOps Engineer",
     company_name: "BMW Group, Munich-Germany",
@@ -132,12 +134,13 @@ const experiences = [
       "Performance Monitoring: Integrate Prometheus and Grafana to monitor the model's performance in real-time and optimize deployments.",
     ],
   },
+  */
   {
     title: "MLOps/AI Engineer",
     company_name: "Capgemini, Strasbourg-France",
     icon: capgemini,
     iconBg: "#ffffff",
-    date: " 04/2023 - 09/2023",
+    date: "",
     points: [
       "Development of an AI algorithm for 3D organ segmentation on medical images in a pre-diagnostic context.",
       "Implementation of a 3D Unet model using PyTorch and Monai, enhanced by the integration of Transformers (+20% on the DICE metric).",
@@ -150,22 +153,23 @@ const experiences = [
 ];
 
 const educations = [
-  {
+/*  {
     title: "Master in Images and data sciences",
     company_name: "University of Bordeaux, France",
     icon: bordeaux,
     iconBg: "#ffffff",
-    date: "2023 -  2024",
+    date: "2023 - 2024",
     points: [
       
     ],
   },
+  */
   {
     title: "Erasmus+ Exchange Program",
     company_name: "The Technical University of Munich (TUM), Munich-Germany",
     icon: tum,
     iconBg: "#ffffff",
-    date: "2023 - 2024",
+    date: "",
     points: [
       "Master in DevOps and cloud computing"
     ],
@@ -175,7 +179,7 @@ const educations = [
     company_name: "University of Lorraine, Metz-France",
     icon: lorraine,
     iconBg: "#ffffff",
-    date: "2021 - 2023",
+    date: "",
     points: [
       
     ],
@@ -185,7 +189,7 @@ const educations = [
     company_name: "University of Lorraine, Metz-France",
     icon: lorraine,
     iconBg: "#ffffff",
-    date: "2020 - 2021",
+    date: "",
     points: [
      
     ],
