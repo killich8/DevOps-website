@@ -52,6 +52,28 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+
+      
+      {experience.techIcons && (
+        <div className='mt-6 flex flex-wrap gap-6'>
+          {experience.techIcons.map((tech, index) => (
+            <div
+              key={`tech-${index}`}
+              className='w-12 h-12 flex flex-col items-center group relative'
+              title={tech.name}
+            >
+              <img 
+                src={tech.icon} 
+                alt={tech.name} 
+                className='w-full h-full object-contain transition-transform duration-300 group-hover:scale-110'
+              />
+              <span className='text-xs text-secondary mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </VerticalTimelineElement>
   );
 };

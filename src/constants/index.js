@@ -21,7 +21,10 @@ import {
   bash,
   grafana,
   prometheus,
-  circet
+  circet,
+  orange,
+  SFR,
+  free,
 } from "../assets";
 
 export const navLinks = [
@@ -117,6 +120,20 @@ const experiences = [
       "Mannage cloud infrastructures to ensure scalability and resilience of applications.",
       "Ensure the quality and maintenance of models in production (monitoring, retraining ...).",
       "Write technical documentation and user guides for implemented solutions.",
+    ],
+    techIcons: [
+      {
+        name: "orange",
+        icon: orange,
+      },
+      {
+        name: "SFR",
+        icon: SFR,
+      },
+      {
+        name: "Free",
+        icon: free,
+      },
     ],
   },
   /*

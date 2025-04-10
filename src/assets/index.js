@@ -29,7 +29,9 @@ import gcp from "./tech/gcp.png";
 import capgemini from "./company/capgemini.png";
 import BMW from "./company/BMW.png";
 import circet from "./company/circet.png";
-
+import orange from "./company/orange.jpg";
+import SFR from "./company/SFR.png";
+import free from "./company/free.png";
 
 import bordeaux from "./education/bordeaux.png";
 import lorraine from "./education/lorraine.png";
@@ -71,5 +73,8 @@ export {
   bash,
   grafana,
   prometheus,
-  circet
+  circet,
+  orange,
+  SFR,
+  free
 };
