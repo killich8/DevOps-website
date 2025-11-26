@@ -117,6 +117,48 @@
   -webkit-text-fill-color: transparent;
 }
 
+.vault-text-gradient {
+  background: linear-gradient(135deg, #7C3AED, #5B21B6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ansible-text-gradient {
+  background: linear-gradient(135deg, #EE0000, #CC0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jenkins-text-gradient {
+  background: linear-gradient(135deg, #D33833, #EF4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.python-text-gradient {
+  background: linear-gradient(135deg, #3776AB, #306998);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.docker-text-gradient {
+  background: linear-gradient(135deg, #0db7ed, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prometheus-text-gradient {
+  background: linear-gradient(135deg, #E6522C, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grafana-text-gradient {
+  background: linear-gradient(135deg, #F46800, #FFAB00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

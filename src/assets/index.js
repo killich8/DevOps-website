@@ -22,6 +22,8 @@ import python from "./tech/python.png";
 import aws from "./tech/aws.png";
 import azure from "./tech/azure.png";
 import gcp from "./tech/gcp.png";
+import vault from "./tech/Vault SECaas Platform.png"
+import vault_hashi from "./tech/Vault Hashicorp.png"
 
 
 
@@ -76,5 +78,7 @@ export {
   circet,
   orange,
   SFR,
-  free
+  free,
+  vault,
+  vault_hashi
 };

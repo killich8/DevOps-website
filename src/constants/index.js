@@ -25,6 +25,8 @@ import {
   orange,
   SFR,
   free,
+  vault,
+  vault_hashi,
 } from "../assets";
 
 export const navLinks = [
@@ -103,6 +105,11 @@ const technologies = [
     name: "grafana",
     icon: grafana,
   },
+
+  //   {
+  //   name: "vault",
+  //   icon: vault_hashi,
+  // },
 
 ];
 
@@ -214,42 +221,87 @@ const educations = [
 ];
 
 const projects = [ 
-  {
-    name: "Cardiovascular Disease",
+  // {
+  //   name: "Cardiovascular Disease",
+  //   description:
+  //     " Complete End to End Machine Learning Project With MLFLOW,DVC And Deployment on AWS",
+  //   tags: [
+  //     {
+  //       name: "Python",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Tensorflow",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MLflow",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Git",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "Docker",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "CI/CD",
+  //       color: "violet-text-gradient",
+  //     },
+  //     {
+  //       name: "AWS",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: cardio,
+  //   source_code_link: "https://github.com/killich8/End-to-End-Cardiovascular-Disease",
+  // },
+
+
+ {
+    name: "Vault SECaaS Platform",
     description:
-      " Complete End to End Machine Learning Project With MLFLOW,DVC And Deployment on AWS",
+      "Built a Security-as-a-Service platform that automates secrets rotation and certificate lifecycle management, through intelligent orchestration of HashiCorp Vault, Jenkins pipelines, and Ansible automation.",
+    
     tags: [
       {
-        name: "Python",
-        color: "blue-text-gradient",
+        name: "Vault",
+        color: "vault-text-gradient",
       },
       {
-        name: "Tensorflow",
-        color: "green-text-gradient",
+        name: "Ansible",
+        color: "ansible-text-gradient",
       },
       {
-        name: "MLflow",
-        color: "pink-text-gradient",
+        name: "Jenkins",
+        color: "jenkins-text-gradient",
       },
       {
-        name: "Git",
-        color: "orange-text-gradient",
+        name: "Python API",
+        color: "python-text-gradient",
       },
       {
         name: "Docker",
-        color: "blue-text-gradient",
+        color: "docker-text-gradient",
       },
       {
-        name: "CI/CD",
-        color: "violet-text-gradient",
+        name: "Prometheus",
+        color: "prometheus-text-gradient",
       },
       {
-        name: "AWS",
-        color: "orange-text-gradient",
+        name: "Grafana",
+        color: "grafana-text-gradient",
+      },
+      {
+        name: "DevSecOps",
+        color: "devsecops-text-gradient",
       },
     ],
-    image: cardio,
-    source_code_link: "https://github.com/killich8/End-to-End-Cardiovascular-Disease",
+    
+    image: vault,
+    source_code_link: "https://github.com/killich8/Vault-SecOps-Automation",
   },
  
 ];
