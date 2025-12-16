@@ -115,18 +115,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "AI DevOps Engineer",
+    title: "System - DevOps Engineer",
     company_name: "Circet - Orange, France",
     icon: circet,
     iconBg: "#FFFFFF",
     date: "2024 - Present",
     points: [
-      "Design and develop artificial intelligence models to solve business problems (predictions, anomaly analysis, automations).",
-      "Set up CI/CD pipelines for continuous integration and deployment of AI models in production (using Jenkins, Gitlab CI/CD ...).",
-      "Design and manage containerized architectures with Docker and Kubernetes.",
-      "Mannage cloud infrastructures to ensure scalability and resilience of applications.",
-      "Ensure the quality and maintenance of models in production (monitoring, retraining ...).",
-      "Write technical documentation and user guides for implemented solutions.",
+      // "Design and develop artificial intelligence models to solve business problems (predictions, anomaly analysis, automations).",
+      // "Set up CI/CD pipelines for continuous integration and deployment of AI models in production (using Jenkins, Gitlab CI/CD ...).",
+      // "Design and manage containerized architectures with Docker and Kubernetes.",
+      // "Mannage cloud infrastructures to ensure scalability and resilience of applications.",
+      // "Ensure the quality and maintenance of models in production (monitoring, retraining ...).",
+      // "Write technical documentation and user guides for implemented solutions.",
     ],
     techIcons: [
       {
@@ -166,10 +166,10 @@ const experiences = [
     iconBg: "#ffffff",
     date: "",
     points: [
-      "Development of an AI algorithm for 3D organ segmentation on medical images in a pre-diagnostic context.",
-      "Implementation of a 3D Unet model using PyTorch and Monai, enhanced by the integration of Transformers (+20% on the DICE metric).",
-      "Automated deployment of models on a cloud environment via CI/CD pipelines, with the development of a results testing interface using FastAPI.",
-      "Writing and presenting an internal scientific paper detailing the results and methodologies applied.",
+      // "Development of an AI algorithm for 3D organ segmentation on medical images in a pre-diagnostic context.",
+      // "Implementation of a 3D Unet model using PyTorch and Monai, enhanced by the integration of Transformers (+20% on the DICE metric).",
+      // "Automated deployment of models on a cloud environment via CI/CD pipelines, with the development of a results testing interface using FastAPI.",
+      // "Writing and presenting an internal scientific paper detailing the results and methodologies applied.",
       
     ],
   },
