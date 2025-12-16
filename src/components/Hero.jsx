@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Youness</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I'm a AI DevOps Engineer, <br className='sm:block hidden' />
+          I'm a System - DevOps Engineer, <br className='sm:block hidden' />
           passionate about automation, infrastructure, CI/CD and AI. Dedicated and ambitious in optimizing workflows and ensuring reliable software delivery.
 
           </p>
