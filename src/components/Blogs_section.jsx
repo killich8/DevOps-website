@@ -77,8 +77,10 @@ const Blogs = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Dive into articles where I share insights, experiences, and perspectives on technology, programming, and innovation. 
-          Each post offers valuable lessons, practical advice, and ideas to inspire and inform readers passionate about learning and growth.
+          Explore articles where I share insights, experiences, and perspectives on technology, 
+          programming, and innovation. Each post delivers practical lessons, actionable advice, 
+          and ideas designed to inspire and inform readers who are passionate 
+          about continuous learning and growth.
         </motion.p>
       </div>
      
