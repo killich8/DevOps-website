@@ -22,7 +22,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
-        I am a professional DevOps Engineer focusing on automation, 
+        I am a professional MLOps Engineer focusing on Machine Learning Operations, automation, 
         infrastructure, CI/CD, container orchestration and security. 
         My strength lies in building scalable, reliable, and secure deployment pipelines. 
         With a strong ability to quickly adapt and a practical mindset towards problem-solving, 

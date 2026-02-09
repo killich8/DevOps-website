@@ -115,7 +115,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "System - DevOps Engineer",
+    title: "AI - MLOps Engineer",
     company_name: "Circet - Orange, France",
     icon: circet,
     iconBg: "#FFFFFF",
@@ -145,7 +145,7 @@ const experiences = [
   },
   /*
   {
-    title: "DevOps/MLOps Engineer",
+    title: "MLOps Engineer",
     company_name: "BMW Group, Munich-Germany",
     icon: BMW,
     iconBg: "#1A3156",
@@ -160,7 +160,7 @@ const experiences = [
   },
   */
   {
-    title: "MLOps/AI Engineer",
+    title: "AI Engineer",
     company_name: "Capgemini, Strasbourg-France",
     icon: capgemini,
     iconBg: "#ffffff",
@@ -195,7 +195,7 @@ const educations = [
     iconBg: "#ffffff",
     date: "",
     points: [
-      "Master in DevOps and cloud computing"
+      "Master in MLOps and cloud computing"
     ],
   },
   {
